@@ -260,7 +260,6 @@ html,body {
         'license license license';
         gap: 10px;
         margin-top: 40px;
-        overflow: scroll;
     }
 
     .credits, .Legal, .footer_contact {
