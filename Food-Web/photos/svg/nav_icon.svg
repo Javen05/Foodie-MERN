@@ -1,0 +1,51 @@
+<svg id="nav_icon" xmlns="http://www.w3.org/2000/svg" width="80" height="45" viewBox="0 0 80 45">
+  <g id="nav_stick_3" fill="#8221f1" stroke="#8221f1" stroke-width="1">
+    <rect width="80" height="5" rx="2.5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="79" height="4" rx="2" fill="none"/>
+  </g>
+  <g id="nav_stick_2" transform="translate(0 20)" fill="#8221f1" stroke="#8221f1" stroke-width="1">
+    <rect width="80" height="5" rx="2.5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="79" height="4" rx="2" fill="none"/>
+  </g>
+  <g id="nav_stick_1" transform="translate(0 40)" fill="#8221f1" stroke="#8221f1" stroke-width="1">
+    <rect width="80" height="5" rx="2.5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="79" height="4" rx="2" fill="none"/>
+  </g>
+</svg>
+
+<svg id="nav_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="45" viewBox="0 0 80 45">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7820db"/>
+      <stop offset="0.519" stop-color="#b234f9"/>
+      <stop offset="1" stop-color="#7710bc"/>
+    </radialGradient>
+  </defs>
+  <rect id="nav_stick_3" width="30" height="4" rx="2" fill="url(#radial-gradient)"/>
+  <rect id="nav_stick_2" width="30" height="4" rx="2" transform="translate(0 20)" fill="url(#radial-gradient)"/>
+  <rect id="nav_stick_1" width="30" height="4" rx="2" transform="translate(0 40)" fill="url(#radial-gradient)"/>
+  <g id="nav_stick_1.2" transform="translate(0 40)" fill="#8221f1">
+    <path d="M 47.06760406494141 4.5 L 2.499997138977051 4.5 C 1.576375246047974 4.5 0.7969657778739929 3.87064003944397 0.5680794715881348 3.018263816833496 C 4.493317604064941 3.142737865447998 27.29931259155273 3.86625599861145 47.06760406494141 4.5 Z" stroke="none"/>
+    <path d="M 15.73234176635742 4 C 10.59342193603516 3.836575984954834 5.729547500610352 3.682151794433594 1.425563335418701 3.545693635940552 C 1.698231339454651 3.825758695602417 2.079182147979736 4 2.500001668930054 4 L 15.73234176635742 4 M 77.5 5 L 2.500001668930054 5 C 1.119290590286255 5 1.652696369092155e-06 3.880711078643799 1.652696369092155e-06 2.5 C 1.652696369092155e-06 2.5 78.88071441650391 5 77.5 5 Z" stroke="none" fill="#8221f1"/>
+  </g>
+  <g id="nav_stick_1.2-2" data-name="nav_stick_1.2" transform="translate(79.518 5.5) rotate(180)" fill="#a200ff">
+    <path d="M 47.06760406494141 4.5 L 2.499997138977051 4.5 C 1.576375246047974 4.5 0.7969657778739929 3.87064003944397 0.5680794715881348 3.018263816833496 C 4.493317604064941 3.142737865447998 27.29931259155273 3.86625599861145 47.06760406494141 4.5 Z" stroke="none"/>
+    <path d="M 15.73234176635742 4 C 10.59342193603516 3.836575984954834 5.729547500610352 3.682151794433594 1.425563335418701 3.545693635940552 C 1.698231339454651 3.825758695602417 2.079182147979736 4 2.500001668930054 4 L 15.73234176635742 4 M 77.5 5 L 2.500001668930054 5 C 1.119290590286255 5 1.652696369092155e-06 3.880711078643799 1.652696369092155e-06 2.5 C 1.652696369092155e-06 2.5 78.88071441650391 5 77.5 5 Z" stroke="none" fill="#8221f1"/>
+  </g>
+</svg>
+
+
+          <svg id="nav_icon" xmlns="http://www.w3.org/2000/svg" width="80" height="45" viewBox="0 0 80 45">
+            <g id="nav_stick_3" fill="#8221f1" stroke="#8221f1" stroke-width="1">
+              <rect width="30" height="5" rx="2.5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="30" height="4" rx="2" fill="none"/>
+            </g>
+            <g id="nav_stick_2" transform="translate(0 12)" fill="#8221f1" stroke="#8221f1" stroke-width="1">
+              <rect width="30" height="5" rx="2.5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="30" height="4" rx="2" fill="none"/>
+            </g>
+            <g id="nav_stick_1" transform="translate(0 24)" fill="#8221f1" stroke="#8221f1" stroke-width="1">
+              <rect width="30" height="5" rx="2.5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="30" height="4" rx="2" fill="none"/>
+            </g>
+          </svg>

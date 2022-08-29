@@ -1,0 +1,45 @@
+body.dark-mode {
+    background-image: conic-gradient(at 55% 0%, #000000, #414141);
+    background-repeat: no-repeat;
+}
+body.dark-mode span#title{
+    color: #fff;
+}
+body.dark-mode p {
+    color: #111;
+}
+body.dark-mode #Ellipse_3, #Ellipse_8, #Ellipse_9, #Ellipse_10, #Ellipse_11 {
+    fill: #111;
+}
+body.dark-mode #Ellipse_4 {
+    fill: #111;
+}
+body.dark-mode #Ellipse_5 {
+    fill: #111;
+}
+body.dark-mode #Ellipse_6 {
+    fill: #111;
+}
+body.dark-mode #Ellipse_7 {
+    fill: #111;
+}
+
+body.dark-mode #Ellipse_3:hover {
+    fill: #fff;
+}
+body.dark-mode #Ellipse_4:hover {
+    fill: #fff;
+}
+body.dark-mode #Ellipse_5:hover {
+    fill: #fff;
+}
+body.dark-mode #Ellipse_6:hover {
+    fill: #fff;
+}
+body.dark-mode #Ellipse_7:hover {
+    fill: #fff;
+}
+
+body.dark-mode a {
+    color: #111;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon"       href="../photos/favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css"         type="text/css" />
+    <link rel="stylesheet" href="../css/darkMode.css"      type="text/css" />
+    <link rel="stylesheet" href="../css/popup-contact.css" type="text/css" />
+    <link rel="stylesheet" href="../css/privacy.css"       type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap"   rel="stylesheet">
+
+    <noscript>JavaScript recommended.</noscript>
+    <script defer src="../js/backToTop.js"></script>
+    <script defer src="../js/themify.js"></script>
+    <script defer src="../js/popup-contact.js"></script>
+    <script defer src="../js/cookie-permission.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Terms of Service" />
+    <title>Cookie Policy</title>
+  </head>
+
+  <body>
+    <style>
+        svg#themeMode {
+            margin-right: 0;
+        }
+
+        #btn_clearCookies:hover {
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+
+    <header class="Header">
+      <div class="Icon">
+        <img src="../photos/Foodie.png" class="Logo" alt="logo" href="#" />
+        <div class="Header_Marginator"></div>
+        <h1>Foodie</h1>
+       </div>
+
+       <div class="Header_Marginator"></div>
+       <div class="Header_Marginator"></div>
+       <h1 style="color: #fff; text-decoration: rgb(86, 60, 255) solid underline;">Cookie Policy</h1>
+
+       <nav class="Navigation" style="position: absolute; right: 10%;">
+       <li onclick="themifyFunction()" class="nav_child1">
+        <svg id="themeMode" data-name="themeMode" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+            <circle id="Ellipse_3" data-name="Ellipse 3" cx="7.5" cy="7.5" r="7.5" transform="translate(9 9)" fill="#fff"/>
+            <circle id="Ellipse_4" data-name="Ellipse 4" cx="3.5" cy="3.5" r="3.5" transform="translate(13)" fill="#fff"/>
+            <circle id="Ellipse_5" data-name="Ellipse 5" cx="3.5" cy="3.5" r="3.5" transform="translate(13 26)" fill="#fff"/>
+            <circle id="Ellipse_6" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(26 13)" fill="#fff"/>
+            <circle id="Ellipse_7" data-name="Ellipse 7" cx="3.5" cy="3.5" r="3.5" transform="translate(0 13)" fill="#fff"/>
+            <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.5" cy="2.5" r="2.5" transform="translate(4 4)" fill="#fff"/>
+            <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.5" cy="2.5" r="2.5" transform="translate(24 4)" fill="#fff"/>
+            <circle id="Ellipse_10" data-name="Ellipse 10" cx="2.5" cy="2.5" r="2.5" transform="translate(24 24)" fill="#fff"/>
+            <circle id="Ellipse_11" data-name="Ellipse 11" cx="2.5" cy="2.5" r="2.5" transform="translate(4 24)" fill="#fff"/>
+        </svg>
+       </li>
+    </nav>
+
+       <button onClick="location.href='../index.html'" id="btn_exitPopup" style="position: absolute; right: 2%;">X</button>
+  </header>
+
+  <div onclick="topFunction()" id="backToTop" title="Scroll to Top">
+      <h1>^</h1>
+  </div>
+
+  <div>
+    <div class="Title">Cookie Policy</div>
+    <div class="Content">
+        By law, we are required to get your acknowlegement before we can use cookies on our website.
+        <br>We require the use cookies enhance your experiences on our website.
+        <br>Hence, by continuing to use our website, you consent to all of our cookies.
+     </div>
+
+     <div class="Title">Neccessary Cookies</div>
+     <div class="Content">
+        Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website.
+        <br>The website cannot function properly without these cookies.
+     </div>
+
+    <div class="Title">Preferences Cookies</div>
+    <div class="Content">
+        Preference cookies enable a website to remember information that changes the way it behaves or looks.
+    </div>
+
+    <div class="Title">Our Platform contains the following Cookies:</div>
+    <div class="Content">
+        <br>1. Session Cookies: Stores information about your session on our website.
+        <br>E.g. Keeping you logged in the next time you revisit the website.
+        <div></div>
+        <br>2. Customization Cookies: Stores your preferred settings.
+        <br>- Theme (Light/Dark Mode)
+        <br>- Music (On/Off)
+    </div>
+
+    <div class="Title">Agreement:</div>
+    <div class="Content">
+        I have read the Cookie Policy and allow the use of cookies on this website.
+        <br><button id="btn_agreeCookies">Agree</button>
+        <br><button id="btn_clearCookies" onclick="clearCookie()">Clear Cookies</button>
+    </div>
+
+  <div id="Footer">
+    <p class="license">
+      Copyright &copy; 2022 Foodie
+      <br>All Rights Reserved
+    </p>
+    </div>
+  </body>
+
+</html>
