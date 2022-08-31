@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/darkMode.css"      type="text/css" />
     <link rel="stylesheet" href="css/popup-contact.css" type="text/css" />
     <link rel="stylesheet" href="css/nav-icon.css"      type="text/css" />
+    <link rel="stylesheet" href="css/parallax.css"       type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap"   rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 
     <noscript>JavaScript recommended.</noscript>
     <script defer src="js/backToTop.js"></script>
@@ -41,7 +43,7 @@
          <h1>Foodie</h1>
         </div>
 
-        <li id="btn_navIcon" onclick="expandNavigationFunction()">
+        <li id="btn_navIcon" onclick="expandNavigationFunction()" custom-title="Navbar">
           <svg id="nav_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="45" viewBox="0 0 80 45">
             <defs>
               <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
@@ -54,16 +56,15 @@
             <rect id="nav_stick_2" width="30" height="5.5" rx="2.5" transform="translate(0 12)" fill="url(#radial-gradient)"/>
             <rect id="nav_stick_1" width="30" height="5.5" rx="2.5" transform="translate(0 24)" fill="url(#radial-gradient)"/>
           </svg>
-
           </li>
 
         <nav class="Navigation">
 
           <li id="btn_closeNav">
-            <button id="btn_collapseNav">X</button>
+            <button id="btn_collapseNav" custom-title="Close">X</button>
           </li>
 
-            <li onclick="themifyFunction()" class="nav_child1">
+            <li onclick="themifyFunction()" class="nav_child1" custom-title="Mode">
                 <svg id="themeMode" data-name="themeMode" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
                     <circle id="Ellipse_3" data-name="Ellipse 3" cx="7.5" cy="7.5" r="7.5" transform="translate(9 9)" fill="#fff"/>
                     <circle id="Ellipse_4" data-name="Ellipse 4" cx="3.5" cy="3.5" r="3.5" transform="translate(13)" fill="#fff"/>
@@ -77,15 +78,15 @@
                 </svg>
             </li>
 
-            <li onclick="playPause()">
-              <svg id="playPauseSVG" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>Music</title><path d="M17.229,4a.9.9,0,0,0-.569.232l-7.6,6.32a1.158,1.158,0,0,1-.955.328H3.208A1.2,1.2,0,0,0,2,12.088v7.826A1.2,1.2,0,0,0,3.208,21.12H8.1a1.158,1.158,0,0,1,.955.328l7.6,6.32c.521.433,1.081.224,1.081-.289V4.522A.494.494,0,0,0,17.229,4ZM27,6.3,25.209,8.093a14.708,14.708,0,0,1,0,15.844l1.785,1.776A17.19,17.19,0,0,0,27,6.3Zm-4.333,4.323L20.905,12.4a6.035,6.035,0,0,1,0,7.237l1.756,1.756a8.554,8.554,0,0,0,.01-10.769Z"/></svg>
+            <li onclick="playPause()" custom-title="Music">
+              <svg id="playPauseSVG" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M17.229,4a.9.9,0,0,0-.569.232l-7.6,6.32a1.158,1.158,0,0,1-.955.328H3.208A1.2,1.2,0,0,0,2,12.088v7.826A1.2,1.2,0,0,0,3.208,21.12H8.1a1.158,1.158,0,0,1,.955.328l7.6,6.32c.521.433,1.081.224,1.081-.289V4.522A.494.494,0,0,0,17.229,4ZM27,6.3,25.209,8.093a14.708,14.708,0,0,1,0,15.844l1.785,1.776A17.19,17.19,0,0,0,27,6.3Zm-4.333,4.323L20.905,12.4a6.035,6.035,0,0,1,0,7.237l1.756,1.756a8.554,8.554,0,0,0,.01-10.769Z"/></svg>
             </li>
 
               <li><a href="#Home_Title"    href="javascript:void(0)">Home</a></li>
               <li><a href="#About_Title"   href="javascript:void(0)">About</a></li>
               <li><a href="#Contact_Title" href="javascript:void(0)">Contact</a></li>
 
-            <li>
+            <li custom-title="Search">
               <a>
                 <svg id="search" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
                  <g id="scope" data-name="scope" fill="#fff" stroke="#111" stroke-width="1.2">
@@ -125,18 +126,21 @@
         This site uses Cookies to enhance your experience.
         <br>
         Your permission is needed to enable Cookies:
-        <a href="html/cookie-policy.html">Learn More</a></p>
-      <button id="btn_agreeCookies" style="display: block">Accept</button>
-      <button id="btn_ignoreCookies">X</button>
+        <a href="html/cookie-policy.html" custom-title="Cookie Policy">Learn More</a></p>
+      <button id="btn_agreeCookies" style="display: block; margin-right: 60px;">Accept</button>
+      <button id="btn_ignoreCookies" custom-title-side="Close">X</button>
     </div>
 
-    <div onclick="topFunction()" id="backToTop" title="Scroll to Top">
+    <div onclick="topFunction()" id="backToTop" custom-title-side="Scroll to Top">
         <h1>^</h1>
     </div>
 
-    <div id="Home">
-    </div>
+    <section>
+      <div id="Home">
+      </div>
+    </section>
 
+    <section>
     <div id="About_Title">
         <h1><span id="title">About Us:</span></h1>
     </div>
@@ -151,8 +155,10 @@
              with an <span>uncensored</span> and <span>unrestricted</span> review system to enable truthful, actual representation, reviews to be expressed without restrictions.
         </p>
     </div>
+    </section>
+
     <div id="About_Search">
-      <h1><span id="title">Discover Now:</span></h1>
+      <h1 custom-title="Search up a Restaurant"><span id="title">Discover Now:</span></h1>
 
         <form action="search.php" method="post">
             <input type="text" name="search" placeholder="Search up a Restaurant...">
@@ -160,6 +166,7 @@
         </form>
     </div>
 
+  <section>
   <div id="Contact_Title">
     <h1><span id="title">Contact Us</span></h1>
   </div>
@@ -179,6 +186,7 @@
         <br>Singapore 529757</span>
     </p>
   </div>
+  </section>
 
   <div class="screen_blur"></div>
 
@@ -208,9 +216,10 @@
       <li><span class="footer_title">Contact</span></li>
       <li><a href="mailto:helpdesk@foodie.com" target="_blank">Email</a></li>
       <li><a onclick="openPopupFunction()" target="popup">Call</a></li>
+      
       <div class="socials">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank"> <title>FaceBook</title>
           <linearGradient id="a" x1="-277.375" x2="-277.375" y1="406.6018" y2="407.5726" gradientTransform="matrix(40 0 0 -39.7778 11115.001 16212.334)" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#0062e0"/>
             <stop offset="1" stop-color="#19afff"/>
@@ -221,13 +230,13 @@
         </svg>
 
         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 248 204">
-          <a href="https://www.twitter.com/" target="_blank">
+          <a href="https://www.twitter.com/" target="_blank"> <title>Twitter</title>
           <path fill="#1d9bf0" d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"/>
           </a>
         </svg>
 
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com" target="_blank"> <title>Instagram</title>
           <use xlink:href="#C" fill="url(#A)"></use>
           <use xlink:href="#C" fill="url(#B)"></use>
           <path d="M20 5.454l-5.997.088c-1.548.071-2.605.316-3.53.676a7.12 7.12 0 0 0-2.577 1.677 7.14 7.14 0 0 0-1.679 2.576c-.361.925-.606 1.983-.676 3.53L5.454 20l.088 5.996c.071 1.549.316 2.605.676 3.53.372.957.869 1.768 1.678 2.577a7.12 7.12 0 0 0 2.576 1.679c.925.36 1.983.605 3.531.676l5.997.088 5.996-.088c1.548-.071 2.607-.316 3.532-.676.956-.371 1.767-.87 2.575-1.679a7.14 7.14 0 0 0 1.679-2.576c.358-.925.603-1.982.676-3.53L34.544 20l-.088-5.998c-.073-1.548-.318-2.605-.676-3.53a7.14 7.14 0 0 0-1.679-2.577 7.11 7.11 0 0 0-2.576-1.677c-.927-.36-1.985-.605-3.533-.676l-5.997-.088H20zm-1.305 2.621H20l5.877.084c1.418.065 2.188.302 2.7.501.679.264 1.163.579 1.672 1.088s.824.994 1.088 1.673c.199.512.436 1.282.501 2.7l.085 5.876-.085 5.876c-.065 1.418-.302 2.188-.501 2.7-.264.679-.579 1.162-1.088 1.671s-.992.824-1.672 1.088c-.512.2-1.282.436-2.7.501L20 31.917c-3.884 0-4.344-.015-5.877-.085-1.418-.065-2.188-.302-2.701-.502-.679-.264-1.164-.579-1.673-1.088s-.824-.993-1.088-1.672c-.199-.512-.436-1.282-.501-2.7l-.084-5.878.084-5.876c.065-1.418.302-2.188.501-2.701.264-.679.579-1.164 1.088-1.673a4.51 4.51 0 0 1 1.673-1.088c.513-.2 1.283-.436 2.701-.502l4.573-.082v.004zm9.069 2.415c-.964 0-1.745.781-1.745 1.745s.782 1.745 1.745 1.745 1.745-.782 1.745-1.745-.782-1.745-1.745-1.745v.001zM20 12.53A7.47 7.47 0 0 0 12.531 20 7.47 7.47 0 0 0 20 27.468 7.47 7.47 0 0 0 27.469 20 7.47 7.47 0 0 0 20 12.53h0zm0 2.621A4.85 4.85 0 0 1 24.849 20 4.85 4.85 0 0 1 20 24.848 4.85 4.85 0 0 1 15.152 20 4.85 4.85 0 0 1 20 15.151h0z" fill="#fff">
@@ -249,7 +258,7 @@
 
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 	           viewBox="0 0 461.001 461.001" style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve">
-             <a href="https://www.youtube.com" target="_blank">
+             <a href="https://www.youtube.com" target="_blank"> <title>YouTube</title>
            <g>
 	           <path style="fill:#ff1919;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
 		            c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137

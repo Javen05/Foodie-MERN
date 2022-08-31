@@ -40,6 +40,19 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  #btn_navIcon {
+    margin-top: 10px;
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #btn_navIcon {
+    margin-top: 4px;
+  }
+}
+
 #playPauseSVG {
   fill: white;
 }
