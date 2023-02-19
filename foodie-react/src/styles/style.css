@@ -1,0 +1,9 @@
+nav {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
